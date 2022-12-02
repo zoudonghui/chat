@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "author": "Donghui Zou <donghui.zou@shopee.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-flow-strip-types": "^7.19.0",
+    "@babel/preset-flow": "^7.18.6",
+    "@rematch/core": "^2.2.0",
+    "@umijs/babel-preset-umi": "^4.0.33",
+    "babel-preset-flow": "^6.23.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.0",
+    "umi": "^4.0.33",
+    "umi-request": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "postcss-plugin-px2rem": "^0.8.1",
+    "postcss-px2viewport": "^0.1.3",
+    "typescript": "^4.1.2"
+  }
+}

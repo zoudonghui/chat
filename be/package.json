@@ -1,0 +1,51 @@
+{
+  "name": "be",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-be",
+    "stop": "egg-scripts stop --title=egg-server-be",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "lint": "eslint . --ext .ts --resolve-plugins-relative-to .",
+    "clean": "ets clean"
+  },
+  "dependencies": {
+    "egg": "^2.6.1",
+    "egg-scripts": "^2.6.0"
+  },
+  "devDependencies": {
+    "@eggjs/tsconfig": "^1.0.0",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.10.14",
+    "@types/supertest": "^2.0.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^2.1.0",
+    "egg-mock": "^3.16.0",
+    "eslint": "^8.0.0",
+    "eslint-config-egg": "^12.0.0",
+    "typescript": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "ci": {
+    "version": "14, 16, 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "author": "",
+  "license": "MIT"
+}
